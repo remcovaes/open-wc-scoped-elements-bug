@@ -1,0 +1,31 @@
+{
+  "name": "open-wc-scoped-elements-bug",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcovaes/open-wc-scoped-elements-bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remcovaes/open-wc-scoped-elements-bug/issues"
+  },
+  "homepage": "https://github.com/remcovaes/open-wc-scoped-elements-bug#readme",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rollup -c && cp src/index.html dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server -c-1 dist"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.18.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "@open-wc/scoped-elements": "^1.3.0",
+    "lit-element": "^2.3.1"
+  }
+}
